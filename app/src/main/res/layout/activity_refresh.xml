@@ -1,0 +1,61 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- SwipeRefreshLayout for pull-to-refresh functionality -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Main content, e.g., ScrollView or RecyclerView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Add your main content here -->
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Custom Splash Screen Overlay -->
+    <RelativeLayout
+        android:id="@+id/splashOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <!-- Add a logo or splash image here -->
+        <ImageView
+            android:id="@+id/robot"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/robothead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+        <!-- Loading message -->
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading, please wait..."
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/robot"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <!-- Loading ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

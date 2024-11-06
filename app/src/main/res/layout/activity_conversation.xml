@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/conversation"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/conversation"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/headerImageView"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Conversation"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <GridLayout
+        android:id="@+id/buildingGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="8dp">
+
+            <!-- Me Button -->
+            <ImageButton
+                android:id="@+id/meButton"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/me"
+                android:contentDescription="Me" />
+
+            <!-- Greetings Button -->
+            <ImageButton
+                android:id="@+id/greetingsButton"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/greetings"
+                android:contentDescription="Greetings" />
+
+            <!-- Help Button -->
+            <ImageButton
+                android:id="@+id/helpButton"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/help"
+                android:contentDescription="Help" />
+
+            <!-- Toilet Button -->
+            <ImageButton
+                android:id="@+id/toiletButton"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/toilet"
+                android:contentDescription="Toilet" />
+
+            <!-- Day Button -->
+            <ImageButton
+                android:id="@+id/dayButton"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/day"
+                android:contentDescription="Day" />
+
+            <!-- Night Button -->
+            <ImageButton
+                android:id="@+id/nightButton"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/night"
+                android:contentDescription="Night" />
+
+        </GridLayout>
+
+</RelativeLayout>

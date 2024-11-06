@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.techtalk">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        android:name=".CustomApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/techtalk"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/techtalk"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TechTalk"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeSignUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TextToSpeechActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ConversationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MoodActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FamilyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AnimalsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ShapesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ColorsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BuildingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SignLanguageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LockActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TherapistActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ParentHomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ParentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PlannerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".UserProfileActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".NotificationReceiver"/>
+
+        <activity android:name=".ChangeAccountPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ChangeFourDigitPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TextToSpeechVoiceChangerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ChatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AccountLogo"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MainMenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ImageGalleryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".VerificationActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="techtalk-1fb8b.firebaseapp.com"
+                    android:pathPrefix="/__/auth/action" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AccountNavActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ViewLogsActivity" />
+
+
+        <activity android:name=".LockTutorialActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ImageGalleryLockActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TherapistLockTutorialActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ImageGalleryTherapistLockActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorial"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".TherapistHomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Refresh"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewContentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LogoutActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MessageReceiver"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TherapistListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TherapistChatActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ParentChatActivity"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

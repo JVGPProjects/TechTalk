@@ -1,0 +1,303 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DEE2FC"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/button_back"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/headerImageView"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Learn sign"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:id="@+id/welcomeImage"
+        android:layout_below="@id/headerImageView"
+        android:layout_marginTop="-15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="language"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/welcomeImage"
+        android:layout_above="@id/backButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:id="@+id/alphabetGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="9"
+            android:padding="8dp">
+            <!-- ASL Alphabet ImageViews -->
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:contentDescription="ASL A"
+                android:src="@drawable/ic_asl_a"
+                android:tag="A" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:contentDescription="ASL B"
+                android:src="@drawable/ic_asl_b"
+                android:tag="B" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:contentDescription="ASL C"
+                android:src="@drawable/ic_asl_c"
+                android:tag="C" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:contentDescription="ASL D"
+                android:src="@drawable/ic_asl_d"
+                android:tag="D" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL E"
+                android:src="@drawable/ic_asl_e"
+                android:tag="E" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL F"
+                android:src="@drawable/ic_asl_f"
+                android:tag="F" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL G"
+                android:src="@drawable/ic_asl_g"
+                android:tag="G" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL H"
+                android:src="@drawable/ic_asl_h"
+                android:tag="H" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL I"
+                android:src="@drawable/ic_asl_i"
+                android:tag="I" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL J"
+                android:src="@drawable/ic_asl_j"
+                android:tag="J" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL K"
+                android:src="@drawable/ic_asl_k"
+                android:tag="K" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL L"
+                android:src="@drawable/ic_asl_l"
+                android:tag="L" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL M"
+                android:src="@drawable/ic_asl_m"
+                android:tag="M" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL N"
+                android:src="@drawable/ic_asl_n"
+                android:tag="N" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL O"
+                android:src="@drawable/ic_asl_o"
+                android:tag="O" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL P"
+                android:src="@drawable/ic_asl_p"
+                android:tag="P" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL Q"
+                android:src="@drawable/ic_asl_q"
+                android:tag="Q" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL R"
+                android:src="@drawable/ic_asl_r"
+                android:tag="R" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL S"
+                android:src="@drawable/ic_asl_s"
+                android:tag="S" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL T"
+                android:src="@drawable/ic_asl_t"
+                android:tag="T" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL U"
+                android:src="@drawable/ic_asl_u"
+                android:tag="U" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL V"
+                android:src="@drawable/ic_asl_v"
+                android:tag="V" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL W"
+                android:src="@drawable/ic_asl_w"
+                android:tag="W" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL X"
+                android:src="@drawable/ic_asl_x"
+                android:tag="X" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL Y"
+                android:src="@drawable/ic_asl_y"
+                android:tag="Y" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="114dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="ASL Z"
+                android:src="@drawable/ic_asl_z"
+                android:tag="Z" />
+
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>

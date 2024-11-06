@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg"
+    android:padding="16dp"
+    tools:context=".WelcomeSignUpActivity">
+
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:textSize="26dp"
+        android:text="Congratulation!"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:text="Your profile has been"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-27dp"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:text="completed. You may now start"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-27dp"
+        android:layout_marginRight="33dp"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:text="using"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-43dp"
+        android:layout_marginLeft="19dp"
+        android:textSize="13dp"
+        android:textColor="@color/techtalk"
+        android:text="TechTalk."
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <ImageView
+        android:id="@+id/welcomeHelloImage"
+        android:layout_width="220dp"
+        android:layout_height="190dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/congrats"
+        android:contentDescription="Congratulation Image"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textColor="@color/button_text"
+        android:fontFamily="@font/poppinssemibold"
+        android:backgroundTint="@color/button_background" />
+
+</LinearLayout>

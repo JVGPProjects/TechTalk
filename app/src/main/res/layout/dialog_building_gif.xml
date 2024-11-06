@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/buildingGifView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:padding="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_gif" />
+
+    <ImageButton
+        android:id="@+id/speakImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:elevation="10dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Speak Button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/speaker_icon" />
+
+</RelativeLayout>
+

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/bg"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/headerImageView"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <!-- Bordered section for settings content -->
+    <LinearLayout
+        android:id="@+id/settingsContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerImageView"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bordered_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Account Section Button with Image -->
+        <RelativeLayout
+            android:id="@+id/accountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/account" />
+
+            <Button
+                android:id="@+id/accountButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <!-- Change Account Password Button with Image -->
+        <RelativeLayout
+            android:id="@+id/changeAccountPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/password" />
+
+            <Button
+                android:id="@+id/changeAccountPasswordButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <!-- Change 4-Digit Password Button with Image -->
+        <RelativeLayout
+            android:id="@+id/changeFourDigitPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/fourdigit" />
+
+            <Button
+                android:id="@+id/changeFourDigitPasswordButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change 4-digit Password"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <!-- Notifications Section with Image -->
+        <RelativeLayout
+            android:id="@+id/notificationsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/notif" />
+
+            <Switch
+                android:id="@+id/notificationsSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:switchTextAppearance="@color/black"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginEnd="60dp"
+                android:text="Enable Notifications" />
+        </RelativeLayout>
+
+        <!-- TTS Voice Changer Button with Image -->
+        <RelativeLayout
+            android:id="@+id/textToSpeechVoiceChangerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/tutorial" />
+
+            <Button
+                android:id="@+id/textToSpeechVoiceChangerButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Tutorial"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <!-- About Section Button with Image -->
+        <RelativeLayout
+            android:id="@+id/aboutSectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/aboutt" />
+
+            <Button
+                android:id="@+id/aboutSectionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Hidden Save and Cancel Buttons initially -->
+    <LinearLayout
+        android:id="@+id/saveCancelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsContentLayout"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

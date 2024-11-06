@@ -1,0 +1,169 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        tools:context=".WelcomeActivity">
+
+    <!-- Back Button at the Top Left -->
+
+    <ImageView
+        android:layout_width="511dp"
+        android:layout_height="272dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-22dp"
+        android:layout_marginTop="-68dp"
+        android:contentDescription="Back"
+        android:padding="0dp"
+        android:src="@drawable/topgreen" />
+
+    <ImageButton
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="0dp"
+        android:contentDescription="Back" />
+
+    <ImageButton
+        android:id="@+id/logoButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/buttonplanner"
+        android:contentDescription="Profile"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:src="@drawable/robothead" />
+
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Button"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="60dp"
+        android:text="Welcome to TechTalk"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginLeft="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+
+    <GridLayout
+        android:id="@+id/buildingGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/welcome"
+        android:layout_centerHorizontal="true"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/accountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerImageView"
+            android:background="@color/bg2"
+            android:layout_marginBottom="-12dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/plannerImageButton"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="90dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentStart="true"
+                android:elevation="10dp"
+                android:src="@drawable/calendar" />
+
+            <Button
+                android:id="@+id/plannerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    Planner"
+                android:layout_marginLeft="75dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/buttonplanner"
+                android:fontFamily="@font/poppinssemibold"
+                android:layout_columnSpan="2" />
+        </RelativeLayout>
+
+        <!-- CalendarView -->
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg2"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_margin="10dp"
+            android:layout_columnSpan="2" />
+
+        <!-- Add Event Button (Initially Hidden) -->
+        <ImageButton
+            android:id="@+id/addEventButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="-0dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add"
+            android:elevation="0dp"
+            android:backgroundTint="@color/bg"
+            android:visibility="gone"
+            android:layout_columnSpan="2" />
+
+    </GridLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_therapist"
+        app:itemIconTint="@color/colorUnselectedd"
+        android:layout_marginBottom="-20dp"
+        android:background="@android:color/white"
+        app:itemTextColor="@color/bottom_navigation_text_color"
+        app:labelVisibilityMode="labeled" />
+
+</RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

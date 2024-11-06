@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tts"
+    android:padding="0dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/tts"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/back1" />
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/headerImageView"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Text-To-Speech"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <!-- EditText for input -->
+    <EditText
+        android:id="@+id/inputPraise"
+        android:layout_width="350dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/headerImageView"
+        android:layout_marginBottom="16dp"
+        android:background="@color/bg"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold"
+        android:hint="Type here..."
+        android:padding="8dp"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:lines="5"
+        android:maxLines="5" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputPraise"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Speak Button with Image -->
+            <ImageView
+                android:id="@+id/speakImage"
+                android:src="@drawable/speak_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:elevation="10dp"
+                android:layout_marginTop="11dp"
+                android:contentDescription="Speak Icon"
+                android:layout_marginEnd="8dp" /> <!-- Margin between image and button -->
+
+            <Button
+                android:id="@+id/speakButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speak"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/poppinssemibold"
+                android:layout_marginEnd="25dp" />
+
+            <!-- Delete Button with Image -->
+            <ImageView
+                android:id="@+id/deleteImage"
+                android:src="@drawable/delete_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="11dp"
+                android:contentDescription="Delete Icon"
+                android:layout_marginEnd="8dp" /> <!-- Margin between image and button -->
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/poppinssemibold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

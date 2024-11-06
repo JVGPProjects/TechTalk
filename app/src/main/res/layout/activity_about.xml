@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/headerImageView"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="About"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="TechTalk"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <ImageView
+        android:id="@+id/signinImage"
+        android:layout_marginTop="-5dp"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:src="@drawable/robothead"
+        android:contentDescription="Sign In Image"
+        android:layout_marginBottom="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/aboutTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:text="Overview"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/aboutTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginBottom="30dp"
+                android:text="TechTalk is a specialized Android application designed to support children's speech and communication development, particularly within behavioral therapy settings. This app provides engaging tools and resources that help children practice their speech skills in a fun and interactive way."
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/aboutTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:text="Purpose"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/aboutTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginBottom="30dp"
+                android:text="Our mission is to enhance the therapy experience by providing a user-friendly platform that empowers children to communicate more effectively. TechTalk is tailored to the unique needs of children undergoing speech therapy, making it easier for therapists and caregivers to integrate speech exercises into daily routines."
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/aboutTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:text="Who Can Use It"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/aboutTextView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_marginBottom="30dp"
+                android:text="TechTalk is ideal for children receiving speech therapy, as well as their parents and therapists. It aims to provide additional support outside of therapy sessions, reinforcing skills in a comfortable setting."
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<!-- dialog_predefined_profiles.xml -->
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileGridView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:numColumns="3"
+    android:background="@color/white"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:gravity="center"/>

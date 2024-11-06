@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feelings"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/feelings"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/headerImageView"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Express your"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:id="@+id/welcomeImage"
+        android:layout_below="@id/headerImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="feelings"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/welcomeImage"
+        android:layout_above="@id/backButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="34dp"
+        android:foregroundGravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+
+    <GridLayout
+        android:id="@+id/alphabetGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="8dp">
+        <!-- ASL Alphabet ImageViews -->
+
+        <ImageButton
+            android:id="@+id/happyButton"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:contentDescription="Happy"
+            android:src="@drawable/ic_happy" />
+
+        <ImageButton
+            android:id="@+id/sadButton"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:contentDescription="Sad"
+            android:src="@drawable/ic_sad" />
+
+        <ImageButton
+            android:id="@+id/angryButton"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:contentDescription="Angry"
+            android:src="@drawable/ic_angry" />
+
+        <ImageButton
+            android:id="@+id/excitedButton"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:contentDescription="Excited"
+            android:src="@drawable/ic_excited" />
+
+        <ImageButton
+            android:id="@+id/confusedButton"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:contentDescription="Confused"
+            android:src="@drawable/ic_confused" />
+
+        <ImageButton
+            android:id="@+id/surprisedButton"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:contentDescription="Surprised"
+            android:src="@drawable/ic_surprised" />
+
+        <ImageButton
+            android:id="@+id/sickButton"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:contentDescription="Sick"
+            android:src="@drawable/ic_sick" />
+
+        <ImageButton
+            android:id="@+id/scaredButton"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:contentDescription="Scared"
+            android:src="@drawable/ic_scared" />
+
+    </GridLayout>
+    </ScrollView>
+</RelativeLayout>

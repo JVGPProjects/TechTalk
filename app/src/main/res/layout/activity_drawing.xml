@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/draw"
+    android:orientation="vertical">
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/draw"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/headerImageView"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:textSize="25sp"
+        android:text="Drawing Corner"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <com.example.techtalk.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Horizontal layout for SeekBar, TextView, and Clear Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- SeekBar for pen size -->
+        <SeekBar
+            android:id="@+id/penSizeSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="50"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/penSizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pen Size: 5"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPressed"
+            android:textColor="@color/black"
+            android:text="Clear"/>
+    </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/draw"
+                android:orientation="horizontal">
+
+                <!-- Color Buttons -->
+                <Button
+                    android:id="@+id/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/colorRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Red"
+                    android:backgroundTint="@color/red"/>
+
+                <Button
+                    android:id="@+id/colorGreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green"
+                    android:backgroundTint="@color/green" />
+
+                <Button
+                    android:id="@+id/colorBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue"
+                    android:text="Blue" />
+
+                <Button
+                    android:id="@+id/colorYellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/yellow"
+                    android:text="Yellow" />
+
+                <Button
+                    android:id="@+id/colorCyan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cyan"
+                    android:text="Cyan"/>
+
+                <Button
+                    android:id="@+id/colorMagenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/magenta"
+                    android:text="Magenta"/>
+
+                <Button
+                    android:id="@+id/colorOrange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:text="Orange"/>
+
+                <Button
+                    android:id="@+id/colorPurple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purple"
+                    android:backgroundTint="#800080"/> <!-- Hex code for Purple -->
+
+                <Button
+                    android:id="@+id/colorPink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pink"
+                    android:backgroundTint="#FFC0CB"/> <!-- Hex code for Pink -->
+
+                <Button
+                    android:id="@+id/colorBrown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brown"
+                    android:backgroundTint="#A52A2A"/> <!-- Hex code for Brown -->
+
+                <Button
+                    android:id="@+id/colorLightGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Light Gray"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <Button
+                    android:id="@+id/colorDarkGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark Gray"
+                    android:backgroundTint="#A9A9A9"/>
+
+                <Button
+                    android:id="@+id/colorLime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lime"
+                    android:backgroundTint="#00FF00"/> <!-- Hex code for Lime -->
+
+                <Button
+                    android:id="@+id/colorTeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teal"
+                    android:backgroundTint="#008080"/> <!-- Hex code for Teal -->
+
+                <Button
+                    android:id="@+id/colorOlive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Olive"
+                    android:backgroundTint="#808000"/> <!-- Hex code for Olive -->
+
+                <Button
+                    android:id="@+id/colorNavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Navy"
+                    android:backgroundTint="#000080"/> <!-- Hex code for Navy -->
+
+                <Button
+                    android:id="@+id/colorGold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gold"
+                    android:backgroundTint="#FFD700"/> <!-- Hex code for Gold -->
+
+                <Button
+                    android:id="@+id/colorCoral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coral"
+                    android:backgroundTint="#FF7F50"/> <!-- Hex code for Coral -->
+
+                <Button
+                    android:id="@+id/colorSlateGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slate Gray"
+                    android:backgroundTint="#708090"/> <!-- Hex code for Slate Gray -->
+
+                <Button
+                    android:id="@+id/colorKhaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Khaki"
+                    android:backgroundTint="#F0E68C"/> <!-- Hex code for Khaki -->
+
+                <!-- Add more colors as needed -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+</LinearLayout>

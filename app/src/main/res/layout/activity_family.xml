@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/family"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/family"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/headerImageView"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Family"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/headerImageView"
+        android:layout_above="@id/backButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:id="@+id/alphabetGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:padding="8dp">
+
+            <!-- Mother Button -->
+            <ImageButton
+                android:id="@+id/motherButton"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mother"
+                android:contentDescription="Mother" />
+
+            <!-- Father Button -->
+            <ImageButton
+                android:id="@+id/fatherButton"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/father"
+                android:contentDescription="Father" />
+
+            <!-- Brother Button -->
+            <ImageButton
+                android:id="@+id/brotherButton"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/brother"
+                android:contentDescription="Brother" />
+
+            <!-- Sister Button -->
+            <ImageButton
+                android:id="@+id/sisterButton"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/sister"
+                android:contentDescription="Sister" />
+
+            <!-- Grandparents Button -->
+            <ImageButton
+                android:id="@+id/grandparentsButton"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/grandparents"
+                android:contentDescription="Grandparents" />
+
+            <!-- Friends Button -->
+            <ImageButton
+                android:id="@+id/friendsButton"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/friends"
+                android:contentDescription="Friends" />
+
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>

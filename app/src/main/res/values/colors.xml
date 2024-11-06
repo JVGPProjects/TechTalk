@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bottom_navigation_icon_color" />
+    <color name="bottom_navigation_text_color" />
+    <color name="DEE2FC">#DEE2FC</color>
+    <color name="button_background">#DBF6BF</color>
+    <color name="button_back">#DEE2FC</color>
+
+    <color name="back">#707C63</color>
+    <color name="back1">#F8F8F8</color>
+    <color name="bg2">#B0B0B0</color>
+
+    <color name="calendar">#D9D9D9</color>
+    <color name="calendar2">#757575</color>
+
+    <color name="tts">#CCE7CC</color>
+    <color name="feelings">#B8E4AF</color>
+    <color name="conversation">#FFF2B3</color>
+    <color name="building">#C4EFE8</color>
+    <color name="draw">#737AA3</color>
+    <color name="alphabet">#DEE2FC</color>
+    <color name="family">#E7CEF4</color>
+    <color name="animal">#F5F5BC</color>
+    <color name="shape">#FDD8B3</color>
+    <color name="color">#FFBEB1</color>
+    <color name="favorites">#DBF6BF</color>
+    <color name="techtalk">#44852B</color>
+    <color name="planbox">#A3696C69</color>
+    <color name="planner">#DBF6BF</color>
+    <color name="button_pfp">#DEE2FC</color>
+    <color name="button_text">#000000</color>
+    <color name="welcomehead">#DBF6BF</color>
+    <color name="background">#FFFFFF</color>
+    <color name="text_color_light">#000000</color> <!-- Black for light mode -->
+    <color name="text_color_dark">#FFFFFF</color> <!-- White for dark mode -->
+    <color name="text_color_default">#000000</color> <!-- Default text color (black) -->
+    <color name="bg">#FBFAFA</color>
+    <color name="bg1">#A8A8A8</color>
+    <color name="navi">#E8E7E7</color>
+    <color name="colorPressed">#A6A0A0</color>
+    <color name="colorUnselected">#757575</color>
+    <color name="colorUnselectedd">#CACACA</color>
+    <color name="buttonplanner">#ACD97D</color>
+
+    <color name="hex">#E8E7E7</color>
+    <color name="c">#C0EF8F</color>
+
+    <color name="red">#9F1212</color>
+    <color name="green">#085709</color>
+    <color name="blue">#2186F3</color>
+    <color name="yellow">#E8D638</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="magenta">#Ff00ff</color>
+    <color name="orange">#FFA500</color>
+    <color name="cr">#C3C3C3</color>
+    <color name="verified">#D9D9D9</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="hehe">#2196F3</color>
+
+
+</resources>
